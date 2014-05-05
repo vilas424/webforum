@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" >
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="css1.css" />
+<style>
+
+body
+{
+    margin: 35px;
+    font-size:100%;
+    font-family: arial, sans;
+    background-color: #FFF;
+
+background-image:url('images.jpg');
+background-repeat:repeat-x;
+}
+.legal
+{
+    text-align:center;
+    font-size: 80%;
+    color: #666;
+}
+
+.darken
+{
+	backround-color:#EEE;
+}
+.class1
+{
+    position:absolute;
+    right:0px;
+    top:0px;
+
+}
+
+</style>
+
+<script type="text/javascript">
+
+function loadit( element)
+{
+
+	var tabs=document.getElementById('tabs').getElementsByTagName("a");
+	for (var i=0; i < tabs.length; i++)
+	{
+		if(tabs[i].href == element.href)
+			tabs[i].className="selected";
+		else
+			tabs[i].className="";
+	}
+}
+
+</script>
+
+
+</head>
+
+
+<body>
+    <h1><font color="white" >ONLINE APPOINTMENT SYSTEM</font></h1>
+        <img src="images/index.jpg" class="class1"/>
+<div id="content">
+<div id="tabs">
+<ul>
+     <li><a href="tab-frame-css.html" class="selected" target="mainFrame"  onclick="loadit(this)" >HOME</a></li>
+     <li><a href="cal.php" target="mainFrame"  onclick="loadit(this)" >SCHEDULE</a></li>
+     <li><a href="login.html" target="mainFrame" onclick="loadit(this)" >APPOINTMENT</a></li>
+      <li><a href="view_status.html" target="mainFrame" onclick="loadit(this)" >VIEW STATUS</a></li>
+</ul>
+</div>
+</div>
+</body>
+</html>
